@@ -1,0 +1,240 @@
+html, body, #wrapper {
+  position: fixed;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    background-color:aliceblue;
+}
+
+#wrapper {
+  width: 99%;
+  text-align: center;
+}
+
+
+
+#latex-wrap {
+	float: right;
+	width: 40%;
+  height: 99%;
+}
+
+
+
+#toolbar {
+  position:absolute;
+  top: 0px;
+  height: 2em;
+  margin: 10px;
+  margin-bottom: 5px;
+}
+
+.button {
+  display:inline;  
+  float: left;
+  border-radius: 3px;
+  border: none;
+  padding: .375em 1em .375em 1em;
+  font-size:medium;
+  opacity: 1;
+  transition: all 0.1s ease-in-out;
+  color: #888888;
+  background-color: whitesmoke;
+}
+
+#undo {
+  margin-left: 1em;
+}
+
+#righttoolbar {
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  height: 2em;
+  margin: 10px;
+  margin-bottom: 5px;
+}
+
+#settings {
+  float: right;
+  margin-right: 1em;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: whitesmoke;
+  min-width: 15em;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: .5em 1em;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: lightgray; 
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover {
+    background-color: #3e8e41;
+}
+
+.button:hover {
+  background: lightgray;
+  color: black;
+  opacity: 1.0;
+}
+
+#alert:hover {
+  background-color:firebrick;
+  color: white; 
+}
+
+.switch input {
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0);
+}
+
+.switch label {
+  display: inline;
+  float: right;
+  background-color: white;
+  margin-bottom: 10px;
+  opacity: 0.5;
+  font-size: 1.5em;
+  padding: .2em 1em .2em 1em;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.1s ease-in-out;
+}
+
+
+
+.switch label:hover {
+  cursor: pointer;
+  background: lightgray;
+  opacity: 1.0;
+}
+
+.switch input:checked + label {
+  background-color: whitesmoke;
+  opacity: 1.0;
+}
+
+.switch label:first-of-type {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.switch label:last-of-type {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.header {
+  background-color: #a481b8;
+  text-align: center;
+  height: 30px;
+  padding: 20px;
+}
+
+
+
+
+
+
+
+.canvas{
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  right: 0px;
+  bottom: 35px;
+  
+}
+
+.code-area{
+  float: left;
+  text-align: center;
+  width: 404px;
+  height: 100%;
+  background-color: gainsboro;
+  box-shadow: 5px 5px 10px #888888;
+  border-radius:10px;
+  
+}
+
+.title{
+  background-color:#1fc8db;background-image:linear-gradient(141deg,#9fb8ad 0%,#1fc8db 51%,#2cb5e8 75%);
+  color:white;
+  width: 384;
+  height: 20px;
+  padding: 10px;
+  transform: none;
+  font-size: larger;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#latex {
+  overflow-y: scroll;
+  position: absolute;
+  width: 400px;
+  left: 0px;
+  top: 40px;
+  bottom: 0px;
+  
+  font-family: 'Courier New', Courier, monospace;
+  font-size: small;
+}
+
+textarea{
+  width: 200px;
+  resize: none;
+  margin: 0px;
+  border: 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.bottombar{
+  position:absolute;
+  bottom: 0px;
+  left:0px;
+  right: 0px;
+  height: 30px;
+  margin:10px;
+}
+
+#svg-wrap {
+  position: absolute;
+	left: 400px;
+  margin-left: 20px;
+  right: 0%;
+  height: 100%;
+}
+
+#svg {
+  float: left; 
+	width: 100%;
+  height: 100%;
+  cursor: crosshair;
+  background-color: aliceblue;
+}
